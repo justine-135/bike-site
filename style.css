@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	height: 100vh;
+	background-color: rgb(19, 19, 19);
+}
+
+.index-nav {
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 5rem;
+	padding-top: 30px;
+}
+
+.index-nav-ul {
+	display: flex;
+	justify-content: space-between;
+	width: 25%;
+	margin: auto;
+}
+
+.logo h1 {
+	text-transform: uppercase;
+	font-family: "Bangers", cursive;
+	font-size: 2.4rem;
+	color: white;
+}
+
+.index-nav-ul li {
+	list-style: none;
+}
+
+.index-nav-ul a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: rgb(199, 199, 199);
+	text-transform: uppercase;
+}
+
+.bike-color-scheme {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.bike-colors {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 40%;
+}
+
+.color1,
+.color2,
+.color3,
+.color4 {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+}
+
+.color1 {
+	color: rgb(189, 89, 106);
+	background-color: black;
+}
+
+.color2 {
+	background-color: rgb(151, 7, 7);
+}
+
+.color3 {
+	background-color: gray;
+}
+
+.color4 {
+	background-color: white;
+	border: 1px solid rgb(173, 173, 173);
+}
+
+.icons {
+	display: flex;
+	justify-content: space-between;
+	width: 5%;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icons svg {
+	height: 2.4rem;
+}
+
+.logo svg {
+	height: 6rem;
+	width: 8rem;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	min-height: 70%;
+}
+
+.text-info {
+	line-height: 5rem;
+	width: 40%;
+}
+
+.text-info p {
+	line-height: 2.5rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: rgb(199, 199, 199);
+}
+
+.text-info h1 {
+	color: rgb(247, 247, 247);
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: 6rem;
+}
+
+.text-info h2 {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgb(199, 199, 199);
+}
+
+.main-buttons {
+	margin-top: 2rem;
+}
+
+.buy-btn {
+	padding: 1rem 4rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	background-color: rgb(247, 247, 247);
+	border: none;
+	color: rgb(19, 19, 19);
+	text-transform: uppercase;
+	font-family: "Rubik", sans-serif;
+	cursor: pointer;
+}
+
+.specs-btn {
+	padding: 0.8rem 4rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	background-color: transparent;
+	border: 2px solid rgb(247, 247, 247);
+	color: rgb(247, 247, 247);
+	text-transform: uppercase;
+	font-family: "Rubik", sans-serif;
+	cursor: pointer;
+}
+
+.showcase {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.showcase img {
+	height: 400px;
+	width: 620px;
+}
+
+.circle {
+	height: 60rem;
+	width: 70rem;
+	border-radius: 50%;
+	position: absolute;
+	top: -14%;
+	left: 0%;
+	z-index: -1;
+	background-image: linear-gradient(
+		to bottom,
+		rgb(29, 29, 29),
+		rgb(22, 22, 22)
+	);
+	opacity: 0.2;
+	box-shadow: 0 0 60px 30px rgb(19, 19, 19) inset;
+}
+
+.showcase svg {
+	height: 2.4rem;
+}
+
+.showcase button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.showcase-bikes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.left-btn,
+.right-btn {
+	padding: 1rem 1rem;
+}
+
+.left-btn:hover {
+	animation: leftBtn 1s infinite ease;
+}
+
+.right-btn:hover {
+	animation: rightBtn 1s infinite ease;
+}
+
+@keyframes leftBtn {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes rightBtn {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.big-name {
+	font-size: 8.4rem;
+	position: absolute;
+	z-index: -1;
+	color: rgb(99, 99, 99);
+	opacity: 0.1;
+}
